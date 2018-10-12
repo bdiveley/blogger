@@ -6,7 +6,7 @@ describe 'user sees all articles' do
       article_1 = Article.create!(title: "title 1", body: "body 1")
       article_2 = Article.create!(title: "title 2", body: "body 2")
 
-      visit '/articles'
+      visit articles_path
 
       expect(page).to have_link(article_1.title)
       expect(page).to have_link(article_2.title)
