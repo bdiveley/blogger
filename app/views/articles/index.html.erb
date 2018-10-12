@@ -1,0 +1,5 @@
+All Articles <br>
+<% @articles.each do |article| %>
+  Title <%= article.id %>: <%= article.title  %><br>
+  Body: <%= article.body  %><br>
+  <% end  %>
